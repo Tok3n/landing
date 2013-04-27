@@ -1,5 +1,5 @@
-var express = require('express'),
-	  app = express.createServer()
+var express = require("express");
+var app = express();
 
 // Reference
 // https://github.com/vincicat/heroku-express
