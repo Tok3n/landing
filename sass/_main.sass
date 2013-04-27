@@ -1,0 +1,256 @@
+// .wf-loading .wf-active .wf-inactive
+
+$ninesixty-columns: 12
+$nav-separation: 2.1em
+
++allHeadings(1,1.02)
+
+.top-nav
+	+single-box-shadow(hsla(264,50,10,.3),0,-12px,30px,0,true)
+	border-bottom: 1px solid hsla(264,74,90,.9)
+
+.inner-wrapper
+	+grid-container
+
+header
+	+grid(2)
+	.logo
+		+hMargin(1)
+		height: 40px
+		width: 111px
+		+hr-image("logo.png", "logo_hd.png")
+
+nav
+	+grid(10)
+	margin-top: 20px
+
+	.menu
+		text-align: right
+
+		ul
+			+inline-list
+			
+			li
+				margin: 0 $nav-separation/2
+
+				a
+					+link-colors(#171947, #434cd3, #ba7f29)
+					+hover-link
+					+letterpress(white(.7))
+				
+				&:first-child
+					margin: 0 $nav-separation/2 0 0
+				&:last-child
+					margin: 0 0 0 $nav-separation/2
+				&:only-child
+					margin: 0
+
+.upper
+	+hr-image("back.jpg", "back_hd.jpg")
+	background-size: cover
+	+single-box-shadow(black(.7),0,0,15px,0,true)
+	padding-bottom: 1.5em
+	
+	.banner
+		+grid-prefix(7)
+		+grid(5)
+		color: white(.9)
+		+letterpress(black(.8))
+
+		h2
+			color: white(.9)
+		
+		p
+			text-align: justify
+
+		.sign-up
+			margin-top: .4em
+			margin-bottom: .35em
+			+grid(3)
+			+grid-push(1)
+			+alpha
+			+omega
+		
+.sign-up
+	+sassy-button("simple", 10px, 1.3em, #3d44be, #2b3087)
+	+letterpress(black(.6))
+	padding: 0.35em .9em .45em
+	
+	.left
+		float: left
+		text-align: left
+		width: 80%
+		line-height: 1
+		small
+			font-size: .6em
+			font-weight: 600
+
+	.arrow
+		float: right
+		text-align: right
+		font-size: 1.2em
+		margin-top: .5em
+		width: 20%
+		font-family: "fontello"
+
+.blank
+	+hr-image("exclusive_paper.png", "exclusive_paper_@2X.png")
+	+single-box-shadow(hsla(67,95,7,.3),0,20px,60px,0,true)
+	padding: 1.5em 0
+	border-bottom: 1px solid black(.1)
+
+	.devices
+		+grid(6)
+		margin-top: -19.2em
+		margin-bottom: -7em
+		.cellphones
+			+hr-image("cellphonesv2-500.png", "")
+			background-size: auto 440px !important
+			background-repeat: no-repeat
+			height: 440px
+
+	.badges
+		+grid(5)
+		+grid-prefix(1)
+
+		h4
+			text-align: center
+			font-style: italic
+
+		.comming-soon
+			+hr-image("comming-soon.png", "comming-soon.png")
+			height: 90px
+			background-size:  380px 90px
+			background-repeat: no-repeat
+			z-index: 2
+			position: relative
+
+		.stores
+			margin-top: -120px
+			margin-bottom: 1em
+
+			.android
+				height: 50px
+				margin-bottom: 1.2em
+				
+				background: url("https://developer.android.com/images/brand/en_generic_rgb_wo_60.png") no-repeat
+				background-size: auto 50px
+				background-position: top center
+
+			.apple
+				height: 50px
+				
+				background: image-url("App_Store_Badge.png") no-repeat
+				background-size: auto 50px
+				background-position: top center
+
+.how-it-works
+	+grid-container
+	margin-bottom: 2em
+	padding-bottom: 3em
+	border-bottom: 1px solid #ccc
+
+	h2
+		+grid(12)
+
+	.connect, .download, .start-integration
+		+grid(4)
+		
+		h3
+			text-align: center
+
+	$image-size-screen: 300px
+
+	.connect
+		.screen
+			background: image-url("ipad-connect-300.png") no-repeat
+			background-size: $image-size-screen $image-size-screen
+	.download
+		.screen
+			background: image-url("app-store-300.png") no-repeat
+			background-size: $image-size-screen $image-size-screen
+	.start-integration
+		.screen
+			background: image-url("verify-login-300.png") no-repeat
+			background-size: $image-size-screen $image-size-screen
+
+	.screen
+		height: $image-size-screen
+		width: $image-size-screen
+	
+
+.info
+	+grid-container
+	margin-top: 2em
+	
+	.features
+		margin-top: 1em
+		margin-bottom: 2em
+		padding-bottom: 3em
+		border-bottom: 1px solid #ccc
+		
+		.user
+			+grid(4, 12)
+		.secure
+			+grid(4, 12)
+		.recovery
+			+grid(4, 12)
+
+		// .user
+		// 	+grid(4, 16)
+		// 	+grid-prefix(1, 16)
+		// .secure
+		// 	+grid(4, 16)
+		// 	+grid-prefix(1, 16)
+		// .recovery
+		// 	+grid(4, 16)
+		// 	+grid-prefix(1, 16)
+
+		h1.large-icon
+			text-align: center
+			font-size: 5em
+			margin-bottom: .3em
+			color: hsla(237,10,60,1)
+			text-shadow: black(.4) 1px 1px 0
+
+		h3
+			text-align: center
+			line-height: 1.5
+
+	.integration
+		+grid(12)
+		margin-bottom: 2em
+		padding-bottom: 3em
+		// border-bottom: 1px solid #ccc
+
+		ul.nav
+			margin-bottom: -1px
+
+	.call-footer
+		margin-bottom: 2em
+
+		h2
+			+grid(7)
+			margin: 0
+			padding-top: .5em
+			padding-bottom: .3em
+			font-style: italic
+			font-weight: 400
+			border-right: 1px solid #ccc
+
+		.sign-up
+			+grid-push(2)
+			+grid(3)
+
+footer
+	+hr-image('asfalt.png', 'asfalt_@2X.png')
+	padding-top: 2em
+	padding-bottom: 1.5em
+	color: #bbb
+	+letterpress(black(.8))
+
+	.foot-wrap
+		+grid-container
+		p
+			+grid(12)
+

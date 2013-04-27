@@ -1,0 +1,91 @@
+// Men, dado que tok3n_userkey_field proviene del server-side lo deje como variable, no se si hay algo que se vea mejor. Ademas falta algo que hacer si falla la verificacion (volver a renderear el snippet de js y una manera elegante de dar feedback sobre el error para el usuario). Tambien creo que seria bueno que el private_key se hiciera set una sola vez. Algo asi como tok3n.set({privateKey: 'your_private_key'});
+// Aunque se prefieren distintos estilos en cada lenguaje, trate de que se vean lo mas parecido posible para hacer una sola ventana con tabs como la del landing de stripe.com
+// Me ayudarias a revisar el codigo en general porfa? Gracias!
+
+
+// JS Snippet
+<form action="your-action.lang" method="POST">
+  <script
+    src="https://my.tok3n.com/v1/embed.js" class="your-class"
+    data-public-key="dOcPsnXndcRw3QdIosnE0j"
+    data-userKey="Ngfl6Gn2q15g8mR28vi2no"
+    data-theme="default"
+    data-action-name="Login"
+    data-app-name="Demo Site">
+  </script>
+  <input type="submit" />
+</form>
+
+
+// CURL
+curl https://my.tok3n.com/api/v1/otpValid \
+  -d "ApiKey=HcI561xLCo4666st0871VP" \
+  -d "UserKey=Ngfl6Gn2q15g8mR28vi2no" \
+  -d "otp=123456"
+
+
+// PHP
+<?php
+  require_once('tok3n.php');
+  $response = tok3n_verify ("your_private_key",
+                $user_key,
+                $_POST["tok3n_otp_field"]);
+
+  if ($response -> is_valid) {
+    // Successful verification
+  } else {
+    // Failed verification
+  }
+?>
+
+
+// JAVA
+<%@ page import="net.tok3n.Tok3nImpl" %>
+<%@ page import="net.tok3n.Tok3nResponse" %>
+<%
+  tok3n.setPrivateKey("your_private_key");
+  Tok3nImpl tok3n = new Tok3nImpl();
+  String otp = request.getParameter("tok3n_otp_field");
+
+  Tok3nResponse tok3nResponse = tok3n.verify(user_key, otp);
+  if (tok3nResponse.isValid()) {
+    // Successful verification
+  } else {
+    // Failed verification
+  }
+%>
+
+
+// RUBY
+# Gemfile: gem 'tok3n'
+
+respond_to do |format|
+  if tok3n_verify(:private_key => 'your_private_key',
+    :user_key => @user_key,
+    :otp => 'tok3n_otp_field')
+
+    # Successful verification
+  else
+    # Failed verification
+  end
+end
+
+
+// PYTHON
+
+
+
+// NODE.JS
+var Tok3n = require('tok3n').Tok3n,
+    tok3n = new Tok3n('yourPrivateKey', 
+                  userKey, 
+                  req.body.tok3nOtpField);
+
+tok3n.verify(function(success, error_code) {
+  if (success) {
+    // Successful verification
+  }
+  else {
+    // Failed verification
+  }
+});
