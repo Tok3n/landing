@@ -1,8 +1,27 @@
 {
   "name": "tok3n-landing",
   "version": "0.0.1",
+  "author": "Tok3n <services@tok3n.com>",
+  "description": "A landing page for Tok3n",
+  "contributors": [
+  	{
+  		"name": "Victor Gonzalez",
+  		"email": "victor@tok3n.com"
+  	},
+  	{
+  		"name": "Jose Angel Espinoza",
+  		"email": "angel@tok3n.com"
+  	}
+  ],
   "engines": {
     "node": "0.10.x",
     "npm": "1.2.x"
+  },
+  "repository": {
+  	"type": "git",
+  	"url": "https://github.com/Tok3n/landing",
+  },
+  "dependencies": {
+  	"connect": "2.7.6"
   }
 }
