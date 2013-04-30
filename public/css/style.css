@@ -2055,7 +2055,7 @@ table th[class*="span"],
   *margin-right: .3em;
   line-height: 14px;
   vertical-align: text-top;
-  background-image: url('img/glyphicons-halflings.png?1362115562');
+  background-image: url('img/glyphicons-halflings.png?1367094691');
   background-position: 14px 14px;
   background-repeat: no-repeat;
   margin-top: 1px;
@@ -2075,7 +2075,7 @@ table th[class*="span"],
 .dropdown-menu > .active > a > [class*=" icon-"],
 .dropdown-submenu:hover > a > [class^="icon-"],
 .dropdown-submenu:hover > a > [class*=" icon-"] {
-  background-image: url('img/glyphicons-halflings-white.png?1362115562');
+  background-image: url('img/glyphicons-halflings-white.png?1367094691');
 }
 
 .icon-glass {
@@ -5879,6 +5879,10 @@ h6 {
   margin-bottom: 2.27em;
 }
 
+body {
+  min-width: 1024px;
+}
+
 .top-nav {
   -webkit-box-shadow: inset 0 -12px 30px 0 rgba(23, 13, 38, 0.3);
   -moz-box-shadow: inset 0 -12px 30px 0 rgba(23, 13, 38, 0.3);
@@ -5904,11 +5908,11 @@ header .logo {
   margin-bottom: 0.61em;
   height: 40px;
   width: 111px;
-  background-image: url('img/logo.png?1365734042');
+  background-image: url('img/logo.png?1367094691');
 }
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 5 / 4), (min-resolution: 120dpi) {
   header .logo {
-    background-image: url('img/logo_hd.png?1365734002');
+    background-image: url('img/logo_hd.png?1367094691');
     background-size: 111px 40px;
   }
 }
@@ -5960,7 +5964,7 @@ nav .menu ul li:only-child {
 }
 
 .upper {
-  background-image: url('img/back.jpg?1365733308');
+  background-image: url('img/back.jpg?1367094691');
   background-size: cover;
   -webkit-box-shadow: inset 0 0 15px 0 rgba(0, 0, 0, 0.7);
   -moz-box-shadow: inset 0 0 15px 0 rgba(0, 0, 0, 0.7);
@@ -5969,7 +5973,7 @@ nav .menu ul li:only-child {
 }
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 5 / 4), (min-resolution: 120dpi) {
   .upper {
-    background-image: url('img/back_hd.jpg?1365733799');
+    background-image: url('img/back_hd.jpg?1367094691');
     background-size: 1920px 364px;
   }
 }
@@ -6077,7 +6081,7 @@ nav .menu ul li:only-child {
 }
 
 .blank {
-  background-image: url('img/exclusive_paper.png?1339726744');
+  background-image: url('img/exclusive_paper.png?1367094691');
   -webkit-box-shadow: inset 0 20px 60px 0 rgba(31, 35, 1, 0.3);
   -moz-box-shadow: inset 0 20px 60px 0 rgba(31, 35, 1, 0.3);
   box-shadow: inset 0 20px 60px 0 rgba(31, 35, 1, 0.3);
@@ -6086,7 +6090,7 @@ nav .menu ul li:only-child {
 }
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 5 / 4), (min-resolution: 120dpi) {
   .blank {
-    background-image: url('img/exclusive_paper_@2X.png?1342822700');
+    background-image: url('img/exclusive_paper_@2X.png?1367094691');
     background-size: 560px 420px;
   }
 }
@@ -6100,14 +6104,14 @@ nav .menu ul li:only-child {
   margin-bottom: -7em;
 }
 .blank .devices .cellphones {
-  background-image: url('img/cellphonesv2-500.png?1366956954');
+  background-image: url('img/cellphonesv2-500.png?1367094691');
   background-size: auto 440px !important;
   background-repeat: no-repeat;
   height: 440px;
 }
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 5 / 4), (min-resolution: 120dpi) {
   .blank .devices .cellphones {
-    background-image: url('img/?1367028401');
+    background-image: url('img/?1367094691');
     background-size: 452px 500px;
   }
 }
@@ -6124,7 +6128,7 @@ nav .menu ul li:only-child {
   font-style: italic;
 }
 .blank .badges .comming-soon {
-  background-image: url('img/comming-soon.png?1365983262');
+  background-image: url('img/comming-soon.png?1367094691');
   height: 90px;
   background-size: 380px 90px;
   background-repeat: no-repeat;
@@ -6133,7 +6137,7 @@ nav .menu ul li:only-child {
 }
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 5 / 4), (min-resolution: 120dpi) {
   .blank .badges .comming-soon {
-    background-image: url('img/comming-soon.png?1365983262');
+    background-image: url('img/comming-soon.png?1367094691');
     background-size: 559px 176px;
   }
 }
@@ -6150,7 +6154,7 @@ nav .menu ul li:only-child {
 }
 .blank .badges .stores .apple {
   height: 50px;
-  background: url('img/App_Store_Badge.png?1365912320') no-repeat;
+  background: url('img/App_Store_Badge.png?1367094691') no-repeat;
   background-size: auto 50px;
   background-position: top center;
 }
@@ -6181,15 +6185,15 @@ nav .menu ul li:only-child {
   text-align: center;
 }
 .how-it-works .connect .screen {
-  background: url('img/ipad-connect-300.png?1367007498') no-repeat;
+  background: url('img/ipad-connect-300.png?1367094691') no-repeat;
   background-size: 300px 300px;
 }
 .how-it-works .download .screen {
-  background: url('img/app-store-300.png?1367007473') no-repeat;
+  background: url('img/app-store-300.png?1367094691') no-repeat;
   background-size: 300px 300px;
 }
 .how-it-works .start-integration .screen {
-  background: url('img/verify-login-300.png?1367007379') no-repeat;
+  background: url('img/verify-login-300.png?1367094691') no-repeat;
   background-size: 300px 300px;
 }
 .how-it-works .screen {
@@ -6280,7 +6284,7 @@ nav .menu ul li:only-child {
 }
 
 footer {
-  background-image: url('img/asfalt.png?1344816618');
+  background-image: url('img/asfalt.png?1367094691');
   padding-top: 2em;
   padding-bottom: 1.5em;
   color: #bbbbbb;
@@ -6288,7 +6292,7 @@ footer {
 }
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 5 / 4), (min-resolution: 120dpi) {
   footer {
-    background-image: url('img/asfalt_@2X.png?1344816668');
+    background-image: url('img/asfalt_@2X.png?1367094691');
     background-size: 466px 349px;
   }
 }
