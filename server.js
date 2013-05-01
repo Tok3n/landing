@@ -2,6 +2,7 @@ require('newrelic');
 
 var express = require("express"),
     blade = require('blade'),
+    mime = require('mime'),
     app = express();
 
 // Reference
@@ -9,6 +10,13 @@ var express = require("express"),
 // http://expressjs.com/guide.html
 // https://github.com/spadin/simple-express-static-server
 // http://devcenter.heroku.com/articles/node-js
+
+mime.define({
+  'application/vnd.ms-fontobject': 'eot',
+  'application/x-font-woff': 'woff',
+  'application/x-font-ttf': 'ttf',
+  'image/svg+xml': 'svg'
+});
 
 // Configuration
 app.configure(function(){
@@ -18,6 +26,7 @@ app.configure(function(){
 
 	app.set('views', __dirname + '/views');
 	app.set('view engine', 'blade');
+	app.locals.pretty = true;
 
 	// Error Handling
 	app.use(express.logger());
