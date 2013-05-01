@@ -16,3 +16,8 @@ Using locally
 =======
 This will run the app on localhost:5000 and watch all compass files.
 foreman start -f Procfile.dev
+
+Using in production
+=======
+Be sure to commit your changes before
+git push heroku master
