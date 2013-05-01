@@ -10,7 +10,6 @@ Requirements
 
 Installation
 -
-
 ```bash
 git clone http://github.com/Tok3n/landing && cd tok3n
 echo "RACK_ENV=development" >> .env
@@ -41,6 +40,9 @@ To-do
 * Do mobile
 * Make a/b tests
 * Integrate Google Analytics
+* Contact and about pages
+* Uglify blade js
+* Make a nice pre-deploy minification of css possibly with a Rake file
 
 
 [1]: http://git-scm.com/downloads

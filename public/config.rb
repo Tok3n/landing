@@ -9,7 +9,10 @@ relative_assets = true
 preferred_syntax = :sass
 Sass::Script::Number.precision = 2
 
-# Sass Paths
+# Supresses automatic updates of SASS so as not to offend your Heroku slug
+Sass::Plugin.options[:never_update] = Sass
+
+# true Paths
 http_path = '/'
 http_javascripts_path = http_path + 'js/'
 http_stylesheets_path = http_path + 'css/'

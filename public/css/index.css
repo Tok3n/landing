@@ -1,22 +1,28 @@
+/* line 1, ../sass/_type.sass */
 body {
   font-family: "ff-dagny-web-pro";
   color: #333333;
 }
+/* line 4, ../sass/_type.sass */
 body a {
   color: #434cd3;
 }
+/* line 24, ../../../../../../usr/local/share/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 body a:hover {
   color: #636bd4;
 }
+/* line 27, ../../../../../../usr/local/share/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 body a:active {
   color: #ba7f29;
 }
 
+/* line 19, ../sass/_type.sass */
 h1, h2, h3, button {
   font-family: "adelle";
   color: #3d418f;
 }
 
+/* line 5, ../sass/_helpers.sass */
 .ir {
   background-color: transparent;
   border: 0;
@@ -24,6 +30,7 @@ h1, h2, h3, button {
   *text-indent: -9999px;
 }
 
+/* line 11, ../sass/_helpers.sass */
 .ir:before {
   content: "";
   display: block;
@@ -31,11 +38,13 @@ h1, h2, h3, button {
   height: 150%;
 }
 
+/* line 17, ../sass/_helpers.sass */
 .hidden {
   display: none !important;
   visibility: hidden;
 }
 
+/* line 21, ../sass/_helpers.sass */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -47,6 +56,7 @@ h1, h2, h3, button {
   width: 1px;
 }
 
+/* line 31, ../sass/_helpers.sass */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -57,66 +67,81 @@ h1, h2, h3, button {
   width: auto;
 }
 
+/* line 40, ../sass/_helpers.sass */
 .invisible {
   visibility: hidden;
 }
 
+/* line 43, ../sass/_helpers.sass */
 .clearfix:before,
 .clearfix:after {
   content: " ";
   display: table;
 }
 
+/* line 48, ../sass/_helpers.sass */
 .clearfix:after {
   clear: both;
 }
 
+/* line 51, ../sass/_helpers.sass */
 .clearfix {
   *zoom: 1;
 }
 
+/* line 54, ../sass/_helpers.sass */
 .debug {
   border: 1px solid #b3d4fc;
 }
 
+/* line 1, ../sass/_prettify-bootstrap.scss */
 .com {
   color: #93a1a1;
 }
 
+/* line 2, ../sass/_prettify-bootstrap.scss */
 .lit {
   color: #195f91;
 }
 
+/* line 3, ../sass/_prettify-bootstrap.scss */
 .pun, .opn, .clo {
   color: #93a1a1;
 }
 
+/* line 4, ../sass/_prettify-bootstrap.scss */
 .fun {
   color: #dc322f;
 }
 
+/* line 5, ../sass/_prettify-bootstrap.scss */
 .str, .atv {
   color: #D14;
 }
 
+/* line 6, ../sass/_prettify-bootstrap.scss */
 .kwd, .prettyprint .tag {
   color: #1e347b;
 }
 
+/* line 7, ../sass/_prettify-bootstrap.scss */
 .typ, .atn, .dec, .var {
   color: teal;
 }
 
+/* line 8, ../sass/_prettify-bootstrap.scss */
 .pln {
   color: #48484c;
 }
 
+/* line 10, ../sass/_prettify-bootstrap.scss */
 .prettyprint {
   padding: 8px;
   background-color: #f7f7f9;
   border: 1px solid #e1e1e8;
 }
 
+/* line 15, ../sass/_prettify-bootstrap.scss */
 .prettyprint.linenums {
   -webkit-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
   -moz-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
@@ -124,11 +149,13 @@ h1, h2, h3, button {
 }
 
 /* Specify class=linenums on a pre to get line numbering */
+/* line 22, ../sass/_prettify-bootstrap.scss */
 ol.linenums {
   margin: 0 0 0 33px;
   /* IE indents via margin-left */
 }
 
+/* line 25, ../sass/_prettify-bootstrap.scss */
 ol.linenums li {
   padding-left: 12px;
   color: #bebec5;
@@ -178,6 +205,7 @@ ol.linenums li {
   }
 }
 */
+/* line 44, ../sass/_fontello-embedded.scss */
 [class^="ficon-"]:before,
 [class*=" ficon-"]:before {
   font-family: 'fontello';
@@ -204,26 +232,31 @@ ol.linenums li {
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
+/* line 69, ../sass/_fontello-embedded.scss */
 .ficon-arrow:before {
   content: '\3e';
 }
 
 /* '&gt;' */
+/* line 70, ../sass/_fontello-embedded.scss */
 .ficon-users:before {
   content: '\31';
 }
 
 /* '1' */
+/* line 71, ../sass/_fontello-embedded.scss */
 .ficon-phone:before {
   content: '\33';
 }
 
 /* '3' */
+/* line 72, ../sass/_fontello-embedded.scss */
 .ficon-lock:before {
   content: '\32';
 }
 
 /* '2' */
+/* line 11, ../sass/index.sass */
 .upper {
   background-image: url('img/back.jpg?1367094691');
   background-size: cover;
@@ -233,11 +266,13 @@ ol.linenums li {
   padding-bottom: 1.5em;
 }
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 5 / 4), (min-resolution: 120dpi) {
+  /* line 11, ../sass/index.sass */
   .upper {
     background-image: url('img/back_hd.jpg?1367094691');
     background-size: 1920px 364px;
   }
 }
+/* line 17, ../sass/index.sass */
 .upper .banner {
   padding-left: 560px;
   display: inline;
@@ -248,12 +283,15 @@ ol.linenums li {
   color: rgba(255, 255, 255, 0.9);
   text-shadow: rgba(0, 0, 0, 0.8) 0 1px 0;
 }
+/* line 23, ../sass/index.sass */
 .upper .banner h2 {
   color: rgba(255, 255, 255, 0.9);
 }
+/* line 26, ../sass/index.sass */
 .upper .banner p {
   text-align: justify;
 }
+/* line 29, ../sass/index.sass */
 .upper .banner .sign-up {
   margin-top: 0.4em;
   margin-bottom: 0.35em;
@@ -268,6 +306,7 @@ ol.linenums li {
   margin-right: 0;
 }
 
+/* line 37, ../sass/index.sass */
 .sign-up {
   font-size: 1.3em;
   padding: 0.5em 1.5em;
@@ -294,9 +333,11 @@ ol.linenums li {
   text-shadow: rgba(0, 0, 0, 0.6) 0 1px 0;
   padding: 0.35em 0.9em 0.45em;
 }
+/* line 15, ../../../../../../usr/local/share/gems/gems/sassy-buttons-0.1.4/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .sign-up:hover {
   text-decoration: none;
 }
+/* line 36, ../../../../../../usr/local/share/gems/gems/sassy-buttons-0.1.4/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .sign-up:hover {
   background-color: #252974;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #373dab), color-stop(100%, #252974));
@@ -305,11 +346,13 @@ ol.linenums li {
   background: -o-linear-gradient(#373dab, #252974);
   background: linear-gradient(#373dab, #252974);
 }
+/* line 39, ../../../../../../usr/local/share/gems/gems/sassy-buttons-0.1.4/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .sign-up:active {
   -webkit-box-shadow: #212568 0 1px 2px inset;
   -moz-box-shadow: #212568 0 1px 2px inset;
   box-shadow: #212568 0 1px 2px inset;
 }
+/* line 6, ../../../../../../usr/local/share/gems/gems/sassy-buttons-0.1.4/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .sign-up.disabled, .sign-up[disabled] {
   opacity: 0.6;
   background: #2b3087;
@@ -318,20 +361,24 @@ ol.linenums li {
   -moz-box-shadow: none;
   box-shadow: none;
 }
+/* line 73, ../../../../../../usr/local/share/gems/gems/sassy-buttons-0.1.4/stylesheets/_sassy-buttons.sass */
 .sign-up::-moz-focus-inner {
   padding: 0 !important;
   margin: -1px !important;
 }
+/* line 42, ../sass/index.sass */
 .sign-up .left {
   float: left;
   text-align: left;
   width: 80%;
   line-height: 1;
 }
+/* line 47, ../sass/index.sass */
 .sign-up .left small {
   font-size: 0.6em;
   font-weight: 600;
 }
+/* line 51, ../sass/index.sass */
 .sign-up .arrow {
   float: right;
   text-align: right;
@@ -341,6 +388,7 @@ ol.linenums li {
   font-family: "fontello";
 }
 
+/* line 59, ../sass/index.sass */
 .blank {
   background-image: url('img/exclusive_paper.png?1367094691');
   -webkit-box-shadow: inset 0 20px 60px 0 rgba(31, 35, 1, 0.3);
@@ -350,11 +398,13 @@ ol.linenums li {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 5 / 4), (min-resolution: 120dpi) {
+  /* line 59, ../sass/index.sass */
   .blank {
     background-image: url('img/exclusive_paper_@2X.png?1367094691');
     background-size: 560px 420px;
   }
 }
+/* line 65, ../sass/index.sass */
 .blank .devices {
   display: inline;
   float: left;
@@ -364,6 +414,7 @@ ol.linenums li {
   margin-top: -19.2em;
   margin-bottom: -7em;
 }
+/* line 69, ../sass/index.sass */
 .blank .devices .cellphones {
   background-image: url('img/cellphonesv2-500.png?1367094691');
   background-size: auto 440px !important;
@@ -371,11 +422,13 @@ ol.linenums li {
   height: 440px;
 }
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 5 / 4), (min-resolution: 120dpi) {
+  /* line 69, ../sass/index.sass */
   .blank .devices .cellphones {
     background-image: url('img/?1367094691');
     background-size: 452px 500px;
   }
 }
+/* line 75, ../sass/index.sass */
 .blank .badges {
   display: inline;
   float: left;
@@ -384,10 +437,12 @@ ol.linenums li {
   width: 380px;
   padding-left: 80px;
 }
+/* line 79, ../sass/index.sass */
 .blank .badges h4 {
   text-align: center;
   font-style: italic;
 }
+/* line 83, ../sass/index.sass */
 .blank .badges .comming-soon {
   background-image: url('img/comming-soon.png?1367094691');
   height: 90px;
@@ -397,15 +452,18 @@ ol.linenums li {
   position: relative;
 }
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 5 / 4), (min-resolution: 120dpi) {
+  /* line 83, ../sass/index.sass */
   .blank .badges .comming-soon {
     background-image: url('img/comming-soon.png?1367094691');
     background-size: 559px 176px;
   }
 }
+/* line 91, ../sass/index.sass */
 .blank .badges .stores {
   margin-top: -120px;
   margin-bottom: 1em;
 }
+/* line 95, ../sass/index.sass */
 .blank .badges .stores .android {
   height: 50px;
   margin-bottom: 1.2em;
@@ -413,6 +471,7 @@ ol.linenums li {
   background-size: auto 50px;
   background-position: top center;
 }
+/* line 103, ../sass/index.sass */
 .blank .badges .stores .apple {
   height: 50px;
   background: url('img/App_Store_Badge.png?1367094691') no-repeat;
@@ -420,6 +479,7 @@ ol.linenums li {
   background-position: top center;
 }
 
+/* line 110, ../sass/index.sass */
 .how-it-works {
   margin-left: auto;
   margin-right: auto;
@@ -428,6 +488,7 @@ ol.linenums li {
   padding-bottom: 3em;
   border-bottom: 1px solid #cccccc;
 }
+/* line 116, ../sass/index.sass */
 .how-it-works h2 {
   display: inline;
   float: left;
@@ -435,6 +496,7 @@ ol.linenums li {
   margin-right: 10px;
   width: 940px;
 }
+/* line 119, ../sass/index.sass */
 .how-it-works .connect, .how-it-works .download, .how-it-works .start-integration {
   display: inline;
   float: left;
@@ -442,38 +504,46 @@ ol.linenums li {
   margin-right: 10px;
   width: 300px;
 }
+/* line 122, ../sass/index.sass */
 .how-it-works .connect h3, .how-it-works .download h3, .how-it-works .start-integration h3 {
   text-align: center;
 }
+/* line 128, ../sass/index.sass */
 .how-it-works .connect .screen {
   background: url('img/ipad-connect-300.png?1367094691') no-repeat;
   background-size: 300px 300px;
 }
+/* line 132, ../sass/index.sass */
 .how-it-works .download .screen {
   background: url('img/app-store-300.png?1367094691') no-repeat;
   background-size: 300px 300px;
 }
+/* line 136, ../sass/index.sass */
 .how-it-works .start-integration .screen {
   background: url('img/verify-login-300.png?1367094691') no-repeat;
   background-size: 300px 300px;
 }
+/* line 140, ../sass/index.sass */
 .how-it-works .screen {
   height: 300px;
   width: 300px;
 }
 
+/* line 145, ../sass/index.sass */
 .info {
   margin-left: auto;
   margin-right: auto;
   width: 960px;
   margin-top: 2em;
 }
+/* line 149, ../sass/index.sass */
 .info .features {
   margin-top: 1em;
   margin-bottom: 2em;
   padding-bottom: 3em;
   border-bottom: 1px solid #cccccc;
 }
+/* line 155, ../sass/index.sass */
 .info .features .user {
   display: inline;
   float: left;
@@ -481,6 +551,7 @@ ol.linenums li {
   margin-right: 10px;
   width: 300px;
 }
+/* line 157, ../sass/index.sass */
 .info .features .secure {
   display: inline;
   float: left;
@@ -488,6 +559,7 @@ ol.linenums li {
   margin-right: 10px;
   width: 300px;
 }
+/* line 159, ../sass/index.sass */
 .info .features .recovery {
   display: inline;
   float: left;
@@ -495,6 +567,7 @@ ol.linenums li {
   margin-right: 10px;
   width: 300px;
 }
+/* line 172, ../sass/index.sass */
 .info .features h1.large-icon {
   text-align: center;
   font-size: 5em;
@@ -502,10 +575,12 @@ ol.linenums li {
   color: #8f90a3;
   text-shadow: rgba(0, 0, 0, 0.4) 1px 1px 0;
 }
+/* line 179, ../sass/index.sass */
 .info .features h3 {
   text-align: center;
   line-height: 1.5;
 }
+/* line 183, ../sass/index.sass */
 .info .integration {
   display: inline;
   float: left;
@@ -515,15 +590,19 @@ ol.linenums li {
   margin-bottom: 2em;
   padding-bottom: 3em;
 }
+/* line 189, ../sass/index.sass */
 .info .integration ul.nav {
   margin-bottom: -1px;
 }
+/* line 192, ../sass/index.sass */
 .info .integration pre {
   white-space: pre;
 }
+/* line 195, ../sass/index.sass */
 .info .call-footer {
   margin-bottom: 2em;
 }
+/* line 198, ../sass/index.sass */
 .info .call-footer h2 {
   display: inline;
   float: left;
@@ -537,6 +616,7 @@ ol.linenums li {
   font-weight: 400;
   border-right: 1px solid #cccccc;
 }
+/* line 207, ../sass/index.sass */
 .info .call-footer .sign-up {
   position: relative;
   left: 160px;
