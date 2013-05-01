@@ -25,6 +25,23 @@ This will run the app on localhost:5000 and watch all compass files.
 foreman start -f Procfile.dev
 ```
 
+Deploying
+-
+Remember to configure the following (only if heroku app is new!):
+```bash
+heroku config:set BUILDPACK_URL=https://github.com/heroku/heroku-buildpack-nodejs
+heroku ps:scale web=2
+heroku config:set NEW_RELIC_LICENSE_KEY=yourlicensekey
+```
+
+To-do
+-
+* Check when newrelic for node is stable release
+* Add https, config dns and stuff
+* Do mobile
+* Make a/b tests
+* Integrate Google Analytics
+
 
 [1]: http://git-scm.com/downloads
 [2]: http://nodejs.org/download/
