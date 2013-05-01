@@ -1,7 +1,8 @@
 require('newrelic');
 
-var express = require("express");
-var app = express();
+var express = require("express"),
+    blade = require('blade'),
+    app = express();
 
 // Reference
 // https://github.com/vincicat/heroku-express
@@ -15,8 +16,8 @@ app.configure(function(){
 	app.use(express.bodyParser());
 	app.use(express.methodOverride());
 
-	// app.set('views', __dirname + '/app/views');
-	// app.register('.html', require('jade'));
+	app.set('views', __dirname + '/views');
+	app.set('view engine', 'blade');
 
 	// Error Handling
 	app.use(express.logger());
@@ -30,7 +31,7 @@ app.configure(function(){
 });
 
 app.get('/', function(req, res){
-	res.render("index.html");
+	res.render("index");
 });
 
 // Heroku

@@ -6257,6 +6257,9 @@ nav .menu ul li:only-child {
 .info .integration ul.nav {
   margin-bottom: -1px;
 }
+.info .integration pre {
+  white-space: pre;
+}
 .info .call-footer {
   margin-bottom: 2em;
 }
