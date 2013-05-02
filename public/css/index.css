@@ -247,25 +247,14 @@ ol.linenums li {
   width: 380px;
   color: rgba(255, 255, 255, 0.9);
   text-shadow: rgba(0, 0, 0, 0.8) 0 1px 0;
+  padding-top: 45px;
+  padding-bottom: 45px;
 }
 .upper .banner h2 {
   color: rgba(255, 255, 255, 0.9);
 }
 .upper .banner p {
   text-align: justify;
-}
-.upper .banner .sign-up {
-  margin-top: 0.4em;
-  margin-bottom: 0.35em;
-  display: inline;
-  float: left;
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 220px;
-  position: relative;
-  left: 80px;
-  margin-left: 0;
-  margin-right: 0;
 }
 
 .sign-up {
@@ -361,7 +350,7 @@ ol.linenums li {
   margin-left: 10px;
   margin-right: 10px;
   width: 460px;
-  margin-top: -19.2em;
+  margin-top: -20em;
   margin-bottom: -7em;
 }
 .blank .devices .cellphones {
@@ -383,6 +372,21 @@ ol.linenums li {
   margin-right: 10px;
   width: 380px;
   padding-left: 80px;
+  overflow: hidden;
+  *zoom: 1;
+}
+.blank .badges .sign-up {
+  margin-top: 0.35em;
+  margin-bottom: 0.35em;
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 220px;
+  position: relative;
+  left: 80px;
+  margin-left: 0;
+  margin-right: 0;
 }
 .blank .badges h4 {
   text-align: center;

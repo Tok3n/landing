@@ -19,20 +19,14 @@
 		+grid(5)
 		color: white(.9)
 		+letterpress(black(.8))
+		padding-top: 45px
+		padding-bottom: 45px
 
 		h2
 			color: white(.9)
 		
 		p
 			text-align: justify
-
-		.sign-up
-			margin-top: .4em
-			margin-bottom: .35em
-			+grid(3)
-			+grid-push(1)
-			+alpha
-			+omega
 		
 .sign-up
 	+sassy-button("simple", 10px, 1.3em, #3d44be, #2b3087)
@@ -64,7 +58,7 @@
 
 	.devices
 		+grid(6)
-		margin-top: -19.2em
+		margin-top: -20em
 		margin-bottom: -7em
 		.cellphones
 			+hr-image("cellphonesv2-500.png", "")
@@ -75,6 +69,14 @@
 	.badges
 		+grid(5)
 		+grid-prefix(1)
+		+clearfix
+		.sign-up
+			margin-top: .35em
+			margin-bottom: .35em
+			+grid(3)
+			+grid-push(1)
+			+alpha
+			+omega
 
 		h4
 			text-align: center
