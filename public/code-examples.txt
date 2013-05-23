@@ -23,18 +23,9 @@ curl https://my.tok3n.com/api/v1/otpValid \
 
 
 // PHP
-<?php
-  require_once('tok3n.php');
-  $response = tok3n_verify ("your_private_key",
-                $user_key,
-                $_POST["tok3n_otp_field"]);
-
-  if ($response -> is_valid) {
-    // Successful verification
-  } else {
-    // Failed verification
-  }
-?>
+$tok3n = new Tok3nApiV1("412606679203791017497959777078177647598508","514121217189018690230660");
+$result = $tok3n->validateOTP($tok3n_user_key,$_REQUEST["tok3n_otp_field"]);
+echo $result;
 
 
 // JAVA
