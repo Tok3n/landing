@@ -4,16 +4,14 @@
 
 
 // JS Snippet
-<form action="your-action.lang" method="POST">
-  <script
-    src="https://my.tok3n.com/v1/embed.js" class="your-class"
-    data-public-key="dOcPsnXndcRw3QdIosnE0j"
-    data-userKey="Ngfl6Gn2q15g8mR28vi2no"
-    data-theme="default"
-    data-action-name="Login"
-    data-app-name="Demo Site">
-  </script>
-  <input type="submit" />
+<?php
+	require("tok3n.php");
+	$tok3n = new Tok3nApiV1("412606679203791017497959777078177647598508","514121217189018690230660");
+?>
+...
+<form action="autenticate2.php">
+	<div id="tok3n_placeholder"></div>
+	<script language="javascript" src="<?= $tok3n->getJsClientUrl("Login") ?>" ></script>
 </form>
 
 
