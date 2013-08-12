@@ -14,6 +14,7 @@ Installation
 git clone http://github.com/Tok3n/landing && cd tok3n
 echo "RACK_ENV=development" >> .env
 bundle install
+npm install -g nodemon
 npm install
 ```
 

@@ -180,6 +180,16 @@ replace block body
     
     section.call-footer.clearfix
       h2 Improve your application security today
+      form.paypal(action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top")
+        input(type="hidden" name="cmd" value="_donations")
+        input(type="hidden" name="business" value="YBF6YQ7UYD4TS")
+        input(type="hidden" name="lc" value="MX")
+        input(type="hidden" name="no_note" value="1")
+        input(type="hidden" name="no_shipping" value="1")
+        input(type="hidden" name="currency_code" value="MXN")
+        input(type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHosted")
+        input(type="image" src="https://www.paypalobjects.com/en_US/MX/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!")
+        img(alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1")
       form(action='https://docs.google.com/forms/d/1_GLMySLfzFjEtFGkiUUIOzEkXmfuvMOPeSKqt45s5hU/viewform')
         button.sign-up
           .left

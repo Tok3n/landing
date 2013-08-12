@@ -225,7 +225,7 @@ ol.linenums li {
 
 /* '2' */
 .upper {
-  background-image: url('img/back.jpg?1367094691');
+  background-image: url('img/back.jpg?1376272590');
   background-size: cover;
   -webkit-box-shadow: inset 0 0 15px 0 rgba(0, 0, 0, 0.7);
   -moz-box-shadow: inset 0 0 15px 0 rgba(0, 0, 0, 0.7);
@@ -234,7 +234,7 @@ ol.linenums li {
 }
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 5 / 4), (min-resolution: 120dpi) {
   .upper {
-    background-image: url('img/back_hd.jpg?1367094691');
+    background-image: url('img/back_hd.jpg?1376272590');
     background-size: 1920px 364px;
   }
 }
@@ -260,8 +260,10 @@ ol.linenums li {
 .sign-up {
   font-size: 1.3em;
   padding: 0.5em 1.5em;
+  color: white;
   display: inline-block;
   cursor: pointer;
+  text-decoration: none;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
@@ -278,7 +280,6 @@ ol.linenums li {
   -moz-box-shadow: #757ad3 0 1px 0 inset;
   box-shadow: #757ad3 0 1px 0 inset;
   border: 1px solid #252974;
-  color: white;
   text-shadow: #1c1f58 0 -1px 0;
   text-shadow: rgba(0, 0, 0, 0.6) 0 1px 0;
   padding: 0.35em 0.9em 0.45em;
@@ -300,6 +301,7 @@ ol.linenums li {
   box-shadow: #212568 0 1px 2px inset;
 }
 .sign-up.disabled, .sign-up[disabled] {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
   background: #2b3087;
   cursor: default;
@@ -331,7 +333,7 @@ ol.linenums li {
 }
 
 .blank {
-  background-image: url('img/exclusive_paper.png?1367094691');
+  background-image: url('img/exclusive_paper.png?1376272590');
   -webkit-box-shadow: inset 0 20px 60px 0 rgba(31, 35, 1, 0.3);
   -moz-box-shadow: inset 0 20px 60px 0 rgba(31, 35, 1, 0.3);
   box-shadow: inset 0 20px 60px 0 rgba(31, 35, 1, 0.3);
@@ -340,7 +342,7 @@ ol.linenums li {
 }
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 5 / 4), (min-resolution: 120dpi) {
   .blank {
-    background-image: url('img/exclusive_paper_@2X.png?1367094691');
+    background-image: url('img/exclusive_paper_@2X.png?1376272590');
     background-size: 560px 420px;
   }
 }
@@ -354,14 +356,14 @@ ol.linenums li {
   margin-bottom: -7em;
 }
 .blank .devices .cellphones {
-  background-image: url('img/cellphonesv2-500.png?1367094691');
+  background-image: url('img/cellphonesv2-500.png?1376272590');
   background-size: auto 440px !important;
   background-repeat: no-repeat;
   height: 440px;
 }
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 5 / 4), (min-resolution: 120dpi) {
   .blank .devices .cellphones {
-    background-image: url('img/?1367434204');
+    background-image: url('img/?1376272590');
     background-size: 452px 500px;
   }
 }
@@ -393,7 +395,7 @@ ol.linenums li {
   font-style: italic;
 }
 .blank .badges .comming-soon {
-  background-image: url('img/coming-soon-2.png?1367433661');
+  background-image: url('img/coming-soon-2.png?1376272590');
   height: 96px;
   background-repeat: no-repeat;
   z-index: 2;
@@ -401,7 +403,7 @@ ol.linenums li {
 }
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 5 / 4), (min-resolution: 120dpi) {
   .blank .badges .comming-soon {
-    background-image: url('img/coming-soon-2-hd.png?1367433946');
+    background-image: url('img/coming-soon-2-hd.png?1376272590');
     background-size: 380px 96px;
   }
 }
@@ -418,7 +420,7 @@ ol.linenums li {
 }
 .blank .badges .stores .apple {
   height: 50px;
-  background: url('img/App_Store_Badge.png?1367094691') no-repeat;
+  background: url('img/App_Store_Badge.png?1376272590') no-repeat;
   background-size: auto 50px;
   background-position: top center;
 }
@@ -449,15 +451,15 @@ ol.linenums li {
   text-align: center;
 }
 .how-it-works .connect .screen {
-  background: url('img/ipad-connect-300.png?1367094691') no-repeat;
+  background: url('img/ipad-connect-300.png?1376272590') no-repeat;
   background-size: 300px 300px;
 }
 .how-it-works .download .screen {
-  background: url('img/app-store-300.png?1367094691') no-repeat;
+  background: url('img/app-store-300.png?1376272590') no-repeat;
   background-size: 300px 300px;
 }
 .how-it-works .start-integration .screen {
-  background: url('img/verify-login-300.png?1367094691') no-repeat;
+  background: url('img/verify-login-300.png?1376272590') no-repeat;
   background-size: 300px 300px;
 }
 .how-it-works .screen {
@@ -540,9 +542,15 @@ ol.linenums li {
   font-weight: 400;
   border-right: 1px solid #cccccc;
 }
+.info .call-footer .paypal {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 140px;
+  margin-top: 10px;
+}
 .info .call-footer .sign-up {
-  position: relative;
-  left: 160px;
   display: inline;
   float: left;
   margin-left: 10px;
