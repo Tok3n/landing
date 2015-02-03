@@ -1,0 +1,8 @@
+name: landing
+version: 0.1.0
+author: Victor Gonzalez
+description: Tok3n's landing page
+homepage: https://www.tok3n.com
+dependencies:
+  browser: any
+  js: any

@@ -1,0 +1,6 @@
+sass: grunt watch:sassDev
+coffee: grunt watch:coffeeDev
+jade: grunt watch:jadeDev
+dart: grunt watch:dartDev
+assets: grunt watch:assets
+server: grunt watch:serverFiles

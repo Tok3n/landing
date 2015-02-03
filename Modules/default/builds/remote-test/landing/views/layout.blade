@@ -1,0 +1,85 @@
+!!! 5
+// [if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]
+// [if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]
+// [if IE 8]><html class="no-js lt-ie9"> <![endif]
+// [if gt IE 8]><!
+html.no-js(lang='en')
+  // <![endif]
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    block title(pageTitle)
+      title=pageTitle
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width')
+    block style
+      link(rel='stylesheet', href='css/base.css')
+    // [if lt IE 9]
+      script(src='//html5shiv.googlecode.com/svn/trunk/html5.js')
+      script
+        window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\\/script>')
+    // <![endif]
+
+  body
+    block upper
+      // [if lt IE 7]>
+        p.chromeframe
+          | You are using an
+          strong outdated
+          | browser. Please
+          a(href='http://browsehappy.com/') upgrade your browser
+          | or
+          a(href='http://www.google.com/chromeframe/?redirect=true') activate Google Chrome Frame
+          | to improve your experience.
+      // <![endif]
+      
+      .top-nav
+        .inner-wrapper.clearfix
+          header
+            .logo(alt='Tok3n')
+          nav
+            .menu
+              ul
+                li
+                  a(href='#overview') Overview
+                li
+                  a(href='#how-it-works') How it works
+                li
+                  a(href='#') About us
+                li
+                  a(href='#') Contact
+    block body
+    
+    block footer
+      footer.clearfix
+        .foot-wrap
+          p
+            | © 2013 Tok3n, LLC. All rights reserved.
+            br
+            | Crafted with care in Mexico City.
+      script(src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
+      :js
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\\/script>')
+      script(src='js/plugins.js')
+      script(src='js/main.js')
+      :js
+        var GoSquared = {};
+        GoSquared.acct = "GSN-943354-U";
+        (function(w){
+          function gs(){
+            w._gstc_lt = +new Date;
+            var d = document, g = d.createElement("script");
+            g.type = "text/javascript";
+            g.src = "//d1l6p2sc9645hc.cloudfront.net/tracker.js";
+            var s = d.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(g, s);
+          }
+          w.addEventListener ?
+            w.addEventListener("load", gs, false) :
+            w.attachEvent("onload", gs);
+        })(window);
+      :js
+        var _gaq=[['_setAccount','UA-39917560-2'],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src='//www.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));

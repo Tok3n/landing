@@ -1,0 +1,35 @@
+[
+	{
+		"Name":"development",
+		"App":"tok3n-landing",
+		"Protocol":"http",
+		"Platform_host":"localhost:8080",
+		"Key_public":"1234567890",
+		"Key_secret":"0987654321",
+		"Usage":"LOCAL",
+		"Current": "true",
+		"BrowserPath": "/index.html"
+	},
+	{
+		"Name":"remote-test",
+		"App":"tok3n-landing",
+		"Protocol":"https",
+		"Platform_host":"test-dot-tok3n-landing.appspot.com",
+		"Key_public":"1234567890",
+		"Key_secret":"0987654321",
+		"Usage":"REMOTETEST",
+		"Current": "false",
+		"BrowserPath": "/index.html"
+	},
+	{
+		"Name":"production",
+		"App":"tok3n-landing",
+		"Protocol":"https",
+		"Platform_host":"tok3n-landing.appspot.com",
+		"Key_public":"1234567890",
+		"Key_secret":"0987654321",
+		"Usage":"REMOTETEST",
+		"Current": "false",
+		"BrowserPath": "/index.html"
+	}
+]
