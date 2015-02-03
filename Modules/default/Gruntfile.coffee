@@ -10,23 +10,30 @@ module.exports = (grunt) ->
 
 	cachebuster = Math.round(new Date().getTime() / 1000)
 	
+	pkg = grunt.file.readJSON 'package.json'
 	configFile = grunt.file.readJSON 'config.json'
 	# current config will be the configuration with the parameter "Current" set as "true".
 	currentConfig = siblingArray(configFile, "Current", "true")[0]
 	configName = grunt.option("config") || currentConfig.Name
 	
-	src = path.join(process.cwd(), "src/landing")
-	build = path.join(process.cwd(), "builds/#{configName}/landing")
+	src = path.join(process.cwd(), "src")
+	build = path.join(process.cwd(), "builds/#{configName}")
 	comp = path.join(process.cwd(), "components")
+
+	# This should be the name of the folder and the package.json "name"
+	project = "#{pkg.name}"
+
+	landingSrc = "#{src}/#{project}"
+	landingBuild = "#{build}/#{project}"
 	
 	# Maybe add support for grunt.option
 	localhost = "#{currentConfig.Protocol}://#{currentConfig.Platform_host}#{currentConfig.BrowserPath}"
 	
-	web = "#{src}/web"
-	dist = "#{src}/dist"
-	dartBuildProd = "#{src}/build/web"
-	views = "#{src}/views"
-	dartPkg = "#{src}/packages"
+	web = "#{landingSrc}/web"
+	dist = "#{landingSrc}/dist"
+	dartBuildProd = "#{landingSrc}/build/web"
+	views = "#{landingSrc}/views"
+	dartPkg = "#{landingSrc}/packages"
 
 	css = "#{web}/css"
 	sass = "#{web}/sass"
@@ -38,7 +45,7 @@ module.exports = (grunt) ->
 	html = "#{web}/html"
 	fonts = "#{css}/fonts"
 
-	webBuild = "#{build}/web"
+	webBuild = "#{landingBuild}/web"
 	cssBuild = "#{webBuild}/css"
 	sassBuild = "#{webBuild}/sass"
 	jsBuild = "#{webBuild}/js"
@@ -221,6 +228,10 @@ module.exports = (grunt) ->
 						match: "@@cachebuster"
 						replacement: "#{cachebuster}"
 					}
+					{
+						match: "@@packageVersion"
+						replacement: "#{pkg.version}".replace(/\./g, "-")
+					}
 				]
 			css:
 				files: [
@@ -334,7 +345,7 @@ module.exports = (grunt) ->
 					{
 						cwd: web
 						src: ["landing.dart", "dart/**", "packages/**"]
-						dest: "#{build}/build/web"
+						dest: "#{landingBuild}/build/web"
 					}
 				]
 			deep:
@@ -348,7 +359,7 @@ module.exports = (grunt) ->
 			serverFiles:
 				files: [
 					{
-						cwd: "#{src}"
+						cwd: src
 						src: ["makefile", "app.yaml", "index.yaml"]
 						dest: build
 					}
@@ -370,7 +381,7 @@ module.exports = (grunt) ->
 			sleep:
 				command: 'sleep 1s'
 			dart2js:
-				command: "cd #{build} && pub build"
+				command: "cd #{landingBuild} && pub build"
 			rsyncAll:
 				command: "rm -Rf #{build}/"
 
@@ -419,6 +430,15 @@ module.exports = (grunt) ->
 			assets:
 				files: ["#{css}/**", "#{svg}/**", "#{img}/**", "#{dartPkg}/**", "#{web}/*", "#{js}/**"]
 				tasks: ['sync:assets', 'replace:assets', 'reload']
+
+		##############################################
+
+		bump:
+			options:
+				files: ['package.json']
+				updateConfigs: ['pkg']
+				pushTo: 'origin'
+
 
 	#######################################
 	# Default tasks
@@ -523,3 +543,4 @@ module.exports = (grunt) ->
 	@loadNpmTasks 'grunt-file-creator'
 	@loadNpmTasks 'grunt-contrib-copy'
 	@loadNpmTasks 'grunt-curl'
+	@loadNpmTasks 'grunt-bump'

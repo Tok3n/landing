@@ -28,7 +28,7 @@
 		"Platform_host":"tok3n-landing.appspot.com",
 		"Key_public":"1234567890",
 		"Key_secret":"0987654321",
-		"Usage":"REMOTETEST",
+		"Usage":"PRODUCTION",
 		"Current": "false",
 		"BrowserPath": "/index.html"
 	}

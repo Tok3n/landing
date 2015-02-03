@@ -1,7 +1,7 @@
 runtime: go
 api_version: go1
 application: {[{Tok3n_AppName}]}
-version: 1
+version: @@packageVersion
 module: default
 
 
@@ -24,6 +24,21 @@ handlers:
 #   script: _go_app
 #   secure: always
 
+- url: /ws/.*
+  script: _go_app
+
+# - url: /
+#   static_dir: web/
+#   secure: always
+
+# re-direct to index.html if no path is give
 - url: /
-  static_dir: web/
+  static_files: index.html
+  upload: index.html
+  secure: always
+
+# access the static resources in the root director
+- url: /(.*)
+  static_files: \1
+  upload: (.*)
   secure: always
