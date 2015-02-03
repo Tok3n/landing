@@ -1,6 +1,0 @@
-sass: grunt watch:sassProd
-coffee: grunt watch:coffeeProd
-jade: grunt watch:jadeProd
-dart: grunt watch:dartProd
-assets: grunt watch:assets
-server: grunt watch:serverFiles

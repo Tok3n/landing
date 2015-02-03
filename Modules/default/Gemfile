@@ -1,8 +1,0 @@
-source 'https://rubygems.org'
-
-gem 'foreman'
-gem 'compass'
-gem 'animate', '>= 0.2.beta.0'
-gem 'sassy-buttons'
-gem 'oily_png'
-gem 'breakpoint-slicer'
