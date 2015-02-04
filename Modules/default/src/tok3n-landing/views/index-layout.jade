@@ -1,0 +1,54 @@
+doctype html
+html.no-js(lang="en")
+  head
+    meta(charset='utf-8')
+    title Tok3n
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+
+    block headjs
+    
+    block style
+    link(rel='stylesheet', href='css/style.css')
+
+  body
+    block upper
+
+    block layout
+      block body
+
+    block footer
+
+      //- A word of caution: the following build code is extremely sensitive to indentation, extra spaces and newlines. Be careful!
+
+      <!-- build:template 
+      script
+        :coffee
+          window.Tok3nAuth or= {}
+          Tok3nAuth.Environment or= {}
+          Tok3nAuth.Environment.isDevelopment = false
+      //- script(src='js/async.js?@@cachebuster')
+      //- script(src='js/utils-min.js?@@cachebuster')
+      //- //- script(src='js/messenger.js?@@cachebuster')
+      //- script(src='js/ui.js?@@cachebuster')
+      //- script(async type='application/dart', src='dart_build/t_v2_iframe.dart')
+      //- script(async src='dart_build/packages/browser/dart.js')
+      //- Don't remove single script tag below
+      script
+       /build -->
+
+      // build:remove 
+      script
+        :coffee
+          window.Tok3nAuth or= {}
+          Tok3nAuth.Environment or= {}
+          Tok3nAuth.Environment.isDevelopment = true
+      //- script(src='js/async.js?@@cachebuster')
+      //- script(src='js/utils.js?@@cachebuster')
+      //- //- script(src='js/messenger.js?@@cachebuster')
+      //- script(src='js/ui.js?@@cachebuster')
+      //- script(async type='application/dart', src='t_v2_iframe.dart')
+      //- script(async src='packages/browser/dart.js')
+      //- Don't remove single script tag below
+      script
+      // /build 

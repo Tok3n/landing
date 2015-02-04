@@ -392,10 +392,10 @@ module.exports = (grunt) ->
 				livereload: false
 
 			'all-dev':
-				files: "#{web}/**"
+				files: ["#{landingSrc}/**", "#{src}/makefile", "#{src}/app.yaml"]
 				tasks: "build-dev"
 			'all-prod':
-				files: "#{web}/**"
+				files: ["#{landingSrc}/**", "#{src}/makefile", "#{src}/app.yaml"]
 				tasks: "build-prod"
 
 			sassDev:

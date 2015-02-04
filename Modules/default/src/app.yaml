@@ -33,12 +33,12 @@ handlers:
 
 # re-direct to index.html if no path is give
 - url: /
-  static_files: index.html
-  upload: index.html
+  static_files: tok3n-landing/web/index.html
+  upload: tok3n-landing/web/index.html
   secure: always
 
 # access the static resources in the root director
 - url: /(.*)
-  static_files: \1
-  upload: (.*)
+  static_files: tok3n-landing/web/\1
+  upload: tok3n-landing/web/(.*)
   secure: always
