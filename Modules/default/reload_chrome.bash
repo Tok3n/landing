@@ -2,7 +2,7 @@
 var=$1
 osascript <<EOD
   set u to "$var"
-  tell application "Chromium"
+  tell application "Google Chrome"
     repeat with w in windows
       set i to 0
       repeat with t in tabs of w
